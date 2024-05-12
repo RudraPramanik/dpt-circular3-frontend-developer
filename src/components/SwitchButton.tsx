@@ -5,7 +5,7 @@ const SwitchButtons: React.FC = () => {
     const [selected, setSelected] = useState<number>(1); // Start with the second button selected
 
     // Array to hold labels for buttons
-    const buttons = ['Button 1', 'Button 2', 'Button 3'];
+    const buttons = ['Round Trip', 'One Way', 'Multy city'];
 
     // Function to handle button click
     const handleButtonClick = (index: number) => {
@@ -13,13 +13,13 @@ const SwitchButtons: React.FC = () => {
     };
 
     return (
-        <div className="flex space-x-2">
+        <div className="flex justify-center items-center my-6 ">
             {buttons.map((button, index) => (
                 <button
                     key={index}
                     onClick={() => handleButtonClick(index)}
-                    className={`px-4 py-2 rounded-full text-white font-medium ${
-                        selected === index ? 'bg-blue-500' : 'bg-gray-300 hover:bg-gray-400'
+                    className={`px-4 py-2 border-2 border-indigo-900 text-black font-medium ${
+                        selected === index ? 'bg-indigo-900 text-white ' : ' text-black'
                     }`}
                 >
                     {button}

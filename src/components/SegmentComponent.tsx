@@ -1,11 +1,40 @@
 import React from 'react';
-import Button from './UI/Button';
 import Text from './UI/Text';
 
 
-const Segment = ({ segment, flightClass, fareBasis, duration, id , price, index}) => {
-    console.log(segment)
-    return (
+
+interface SegmentDetails {
+    carrierCode: string;
+    flightNumber: string;
+    aircraft: string;
+    departure: {
+        iataCode: string;
+        at: string; 
+    };
+    arrival: {
+        iataCode: string;
+        at: string; 
+    };
+}
+
+interface SegmentProps {
+    segment: SegmentDetails;
+    flightClass: string;
+    fareBasis: string;
+    duration: string;
+    id: number;
+    price: string;
+    index: number; 
+}
+const Segment: React.FC<SegmentProps> = ({
+    segment,
+    flightClass,
+    fareBasis,
+    duration,
+    id,
+    price,
+}) => {
+        return (
         <div className={``} >
         <div className='grid grid-cols-7 ' >
             <div className=' col-span-3 ' >
@@ -75,15 +104,13 @@ const Segment = ({ segment, flightClass, fareBasis, duration, id , price, index}
                     {id === 0 ? duration : ""}
 
                     </Text>
-
                         </div>
-                    <div className='col-span-1' > {id===0? (<Text variant='bodyXs' className="text-gray-500">{price}</Text>)  : id===2? "" : (<button className=' bg-indigo-900 text-white px-3 py-2 rounded-md  '  >
+                       <div className='col-span-1' > {id===0? (<Text variant='bodyXs' className="text-gray-500">{price}</Text>)  : id===2? "" : (<button className=' bg-indigo-900 text-white px-3 py-2 rounded-md  '  >
                         <Text variant='bodyXs' className='text-gray-100'  >SELECT</Text>
                     </button>)}</div>
                 </div>
             </div>
         </div>
-        
         </div>
     );
   };

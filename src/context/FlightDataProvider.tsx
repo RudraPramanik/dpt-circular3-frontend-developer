@@ -53,11 +53,11 @@ export const FlightDataProvider: React.FC<Props> = ({ children }) => {
   const [error, setError] = useState<string | null>(null);
 
   const fetchData = () => {
-    fetch('../../data/LHR_CDG_ADT1_TYPE_1.txt')  // Update the path to your .txt file
+    fetch('../../data/LHR_CDG_ADT1_TYPE_1.txt')  
       .then(response => response.text())
       .then(text => {
         const data = JSON.parse(text);
-        setFlights(data.flightOffer);  // Ensure your data structure matches the expected format
+        setFlights(data.flightOffer);  
         setError(null);
       })
       .catch(err => {

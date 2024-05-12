@@ -9,11 +9,9 @@ const FlightList = () => {
 
   return (
     <Container className=" ">
-      <h1>Flight Offers</h1>
       <table className="min-w-full leading-normal">
         <thead>
           <tr className="bg-gray-800 text-white">
-            {/* <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">Price</th> */}
           </tr>
         </thead>
         <div>
@@ -99,74 +97,3 @@ const FlightList = () => {
 };
 
 export default FlightList;
-
-//     <div>
-//     <h1>Flight Offers</h1>
-//     {/*  */}
-//     <table className="min-w-full leading-normal">
-//             <thead>
-//                 <tr className="bg-gray-800 text-white">
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Flight
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Aircraft
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Class
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Fare
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Route
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Departure
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Arrival
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Duration
-//                     </th>
-//                     <th className="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
-//                         Price
-//                     </th>
-//                 </tr>
-//             </thead>
-//             <tbody>
-//             {error && <div>Error loading flights: {error}</div>}
-
-//             </tbody>
-//         </table>
-//     {/*  */}
-//     {flights.length > 0 ? (
-//       flights.map((offer, index) => (
-//         <div key={index}>
-//           {offer.itineraries.map((itinerary, iIdx) => (
-//             <div key={iIdx}>
-//               {itinerary.segments.map((segment, sIdx) => (
-//                 <Segment
-//                   key={sIdx}
-//                   segment={segment}
-//                   flightClass={offer.class[iIdx][sIdx]} // Assuming class data is structured similarly to segment data
-//                   fareBasis={offer.fareBasis[iIdx][sIdx]}
-//                   duration={itinerary.duration}
-//                   id={sIdx}
-//                   price={offer.price}
-
-//                 />
-//               ))}
-//               <div>hello</div>
-//             </div>
-//           ))}
-//         </div>
-//       ))
-//     ) : (
-//       <p>No flight data available.</p>
-//     )}
-
-//         {error && <div>Error loading flights: {error}</div>}
-
-//   </div>

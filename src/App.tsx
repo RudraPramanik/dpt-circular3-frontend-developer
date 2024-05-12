@@ -1,15 +1,17 @@
 import FilterBar from "./components/FilterBar";
 import FlightList from "./components/FlightList";
-import FetchButton from "./components/SearchButton";
-import SelectForm from "./components/SelectForm";
+import FlightOptions from "./components/FlightOptions";
+import SwitchButtons from "./components/SwitchButton";
 import Container from "./components/UI/Container";
+
 
 function App() {
   return (
     <>
       <Container>
+        <SwitchButtons/>
         <FilterBar />
-        <FetchButton />
+        <FlightOptions/>
         <FlightList />
       </Container>
     </>

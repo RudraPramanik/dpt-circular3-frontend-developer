@@ -1,30 +1,29 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+**how to run the project**
+>Make sure you have Node installed in your machine
+>Clone/ fork the repository
+>Run `npm install`/ `yarn install`
+>Run `npm run dev` / `yarn run dev`
+then browse the development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live-Projects**
+https://bestenu.nl/
+https://egf-logistics-website.vercel.app/quote
+(currently working on it)
 
-## Expanding the ESLint configuration
+**demo-Project-Link**
+https://github.com/RudraPramanik/X-clone
+https://github.com/RudraPramanik/pdf-saas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Documentation**
+- For Data Fetching we used React built in context api so then we dont have to do
+  props drilling and flight data is available throught the component
+- Built Reuseable UI components and Reuseable Form components as controlled-component so that
+  we dont make our code repeated
+- For modular and clean approach I keep the components smaller and ignore repeated
+- FlightList component is the data that render on pressing of the button, initialy the
+  dataset rendered is empty after the search button is pressed the data is being parsed and rendered
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+*total spend time on it is 5 hours, as it used most modular and maintainde cleanliness*

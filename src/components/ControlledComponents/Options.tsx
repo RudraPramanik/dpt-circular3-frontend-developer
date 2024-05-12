@@ -5,10 +5,8 @@ interface RadioButtonsProps {
 }
 
 const RadioButtons: React.FC<RadioButtonsProps> = ({ options }) => {
-  // State to hold the value of the currently selected option
-  const [selectedOption, setSelectedOption] = useState<string>(options[1]); // Start with the second option selected
+  const [selectedOption, setSelectedOption] = useState<string>(options[1]); 
 
-  // Function to handle option change
   const handleOptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedOption(event.target.value);
   };
