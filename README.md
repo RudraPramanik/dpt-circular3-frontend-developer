@@ -7,13 +7,17 @@
 >Run `npm run dev` / `yarn run dev`
 then browse the development server
 
-**Live-Projects**
+*Live-Projects**
 https://bestenu.nl/
+
 https://egf-logistics-website.vercel.app/quote
+
 (currently working on it)
 
-**demo-Project-Link**
+*demo-Project-Link**
+
 https://github.com/RudraPramanik/X-clone
+
 https://github.com/RudraPramanik/pdf-saas
 
 **Documentation**
