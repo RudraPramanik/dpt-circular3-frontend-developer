@@ -1,20 +1,19 @@
-import FlightList from "./components/FlightList"
-import FetchButton from "./components/SearchButton"
-
+import FilterBar from "./components/FilterBar";
+import FlightList from "./components/FlightList";
+import FetchButton from "./components/SearchButton";
+import SelectForm from "./components/SelectForm";
+import Container from "./components/UI/Container";
 
 function App() {
- 
-
   return (
     <>
-<div>
-  <FetchButton/>
-  <div>okay</div>
-  <FlightList/>
-     
-    </div>  
-     </>
-  )
+      <Container>
+        <FilterBar />
+        <FetchButton />
+        <FlightList />
+      </Container>
+    </>
+  );
 }
 
-export default App
+export default App;
