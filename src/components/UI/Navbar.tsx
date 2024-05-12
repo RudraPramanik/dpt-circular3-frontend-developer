@@ -35,10 +35,13 @@ const Navbar: React.FC = () => {
           </div>
         </Container>
       </div>
-      <div className="text-gray-700 my-5 border-b border-b-gray-300 ">
+      <div className="text-gray-700 border-b border-b-gray-300 ">
+        <Container>
         <Text variant="headingLg" className="" fontWeight="semibold">
           Master Price
         </Text>
+        </Container>
+     
       </div>
     </>
   );
